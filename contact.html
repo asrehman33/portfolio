@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="css/hautDePage.css">
+    <link rel="stylesheet" href="css/contactLogo.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <div class="hautDePage">
+        <div class="portrait">
+            <img src="images/photo.png" alt="photo de profil">
+        </div>
+        <div class="nom">
+            <p>REHMAN Asad-ur</p>
+        </div>
+        <div class="menu">
+            <div class="menu-burger">&#9776;</div>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <!--<li><a href="competences.html">Compétences</a></li>-->
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="pdf/CV_Asad-ur_REHMAN_stage_Final.pdf" target="_blank">CV</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="contenu">
+        <main>
+            <h1>Contactez-moi</h1>
+            <p>N'hésitez pas à me contacter pour toute question ou proposition. Je suis ouvert à la collaboration et aux
+                opportunités professionnelles.</p>
+            <form id="contactForm" action="#" method="POST" onsubmit="envoyerFormulaire(event)">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required placeholder="Votre e-mail">
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Votre message"></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </main>
+    </div>
+    <div class="contactLogo">
+        <div class="logo">
+            <a href="https://www.linkedin.com/in/asad-rehman-6a4393279/" class="icon linkedin" target="_blank">
+                <div class="circle"></div>
+                <img src="images/linkedin.png" alt="logo linkedin">
+            </a>
+            <a href="https://github.com/asrehman33" class="icon github" target="_blank">
+                <div class="circle"></div>
+                <img src="images/github.png" alt="logo github">
+            </a>
+            <a href="mailto:formulaire" class="icon email" target="_blank">
+                <div class="circle"></div>
+                <img src="images/email.png" alt="logo email">
+            </a>
+        </div>
+    </div>
+    <script src="javascript/scroll.js"></script>
+    <script src="javascript/hautDePage.js"></script>
+    <script>
+        function envoyerFormulaire(event) {
+            event.preventDefault(); // Empêche la soumission du formulaire par défaut
+    
+            // Obtenez les données du formulaire
+            const formData = new FormData(document.getElementById('contactForm'));
+    
+            // URL de Formspree (remplacez par votre URL Formspree)
+            const formAction = 'https://formspree.io/f/xzbnpznz';
+    
+            // Envoyer les données du formulaire à Formspree en utilisant Fetch
+            fetch(formAction, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Réponse de Formspree:', data);
+                alert('Le formulaire a été envoyé avec succès!');
+            })
+            .catch(error => {
+                console.error('Erreur lors de l\'envoi du formulaire:', error);
+            });
+    
+            // Réinitialise le formulaire après l'envoi
+            document.getElementById('contactForm').reset();
+        }
+    </script>
+</body>
+
+</html>
