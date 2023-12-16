@@ -1,0 +1,86 @@
+.contenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+    margin: 0px;
+    position: relative;
+    top:10vh;
+}
+
+.photoPosition {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+.photoPosition img {
+    position: absolute;
+    left: 7em;
+    height: 600px;
+    margin: 0;
+    z-index: -1;
+}
+
+.presentation {
+    margin: 0px;
+    width: 85%;
+    height: 90vh;
+    display: flex;
+    justify-content: end;
+}
+
+.contenuPresentaion {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    height: 100%;
+    width: 70%;
+    color: #fff;
+}
+
+.contenuPresentaion h1 {
+    font-size: 50px;
+    margin: 0px;
+    width: 90%;
+    margin-bottom: 40px;
+}
+
+.contenuPresentaion p {
+    font-size: 30px;
+    margin: 0px;
+    width: 100%;
+}
+
+.portrait {
+    display: none;
+}
+
+.hautDePage p{
+    margin-left: 40px;
+}
+
+@media (max-width: 1200px) {
+    .portrait {
+        display: grid;
+    }
+    .hautDePage p{
+        margin-left: 15px;
+    }
+    .photoPosition{
+        display: none;
+    }
+    .presentation {
+        width: 90%;
+    }
+    
+    .contenuPresentaion {
+        width: 100%;
+    }
+}

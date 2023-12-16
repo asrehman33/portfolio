@@ -1,0 +1,252 @@
+.contenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+    position: relative;
+    top:10vh;
+}
+
+main {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0px;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+main article {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 2%;
+    color: #F0F0F0;
+}
+
+main article:nth-child(2n) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+main article div:nth-child(1) {
+    width: 40vw;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+main article div:nth-child(2) {
+    width: 40vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main article div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main article div:nth-child(2) h3 {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+main article:first-child div:first-child img,
+main article:nth-child(3) div:first-child img {
+    height: 290px;
+}
+
+main article:nth-child(2) div:first-child img {
+    height: 350px;
+}
+
+main article:nth-child(4) div:first-child img {
+    height: 190px;
+}
+
+main article:nth-child(5) div:first-child img {
+    height: 400px;
+}
+
+main article:nth-child(6) div:first-child img {
+    height: 300px;
+}
+
+main p {
+    margin: 1%;
+}
+
+main .paragraphe a:hover {
+    color: goldenrod;
+}
+
+.contenu p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.contenu .image-container .overlay span{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #131212;
+    cursor: pointer;
+}
+.contenu main article {
+    position: relative;
+}
+
+.contenu main article .image-container {
+    position: relative;
+}
+
+.contenu main article .image-container .overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    color: #131212;
+    text-align: center;
+    padding: 10px;
+    opacity: 1; 
+    transition: opacity 0.3s ease;
+}
+
+.paragraphe h3 {
+    font-size: 35px;
+}
+
+.paragraphe {
+    border: solid 5px #fff;
+    border-radius: 10px;
+}
+
+.paragraphe:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.paragraphe:hover h3 {
+    font-size: 38px;
+}
+
+.paragraphe:hover p {
+    font-size: 28px;
+}
+
+.image:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
+    main article {
+        flex-wrap: wrap-reverse;
+    }
+
+    main {
+        margin-top: 20px;
+    }
+
+    main article div:nth-child(1) {
+        width: 90vw;
+    }
+
+    main article div:nth-child(2) {
+        width: 90vw;
+    }
+
+    .paragraphe {
+        width: 90vw;
+    }
+
+    .paragraphe:hover {
+        margin: 5%;
+    }
+
+    .image:hover {
+        margin: 2%;
+    }
+}
+
+@media (max-width: 725px) {
+    .paragraphe:hover {
+        transform: none;
+    }
+
+    .paragraphe:hover h3 {
+        font-size: 35px;
+    }
+
+    .paragraphe:hover p {
+        font-size: 25px;
+    }
+
+    .image:hover {
+        cursor: pointer;
+        transform: none;
+    }
+
+    .paragraphe:hover {
+        margin: 0%;
+    }
+
+    .image:hover {
+        margin: 0%;
+    }
+}
+
+/* Style pour le bouton de retour en haut */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555;
+}
+
+
+@media (max-width: 600px) {
+    main {
+        width: 90vw;
+
+    }
+
+    main article div:nth-child(1) {
+        width: 100vw;
+    }
+
+    main article div:nth-child(2) {
+        width: 100vw;
+    }
+
+    .paragraphe {
+        width: 100vw;
+    }
+
+    .contenu img {
+        transform: scale(0.8);
+    }
+}
