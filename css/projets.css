@@ -152,6 +152,16 @@ main .paragraphe a:hover {
 }
 
 @media (max-width: 1200px) {
+    
+    .contenu img {
+        transform: scale(0.6);
+    }
+    .paragraphe h3{
+        font-size: 28px;
+    }
+    .paragraphe p{
+        font-size: 22px;
+    }
     main article {
         flex-wrap: wrap-reverse;
     }
@@ -182,16 +192,13 @@ main .paragraphe a:hover {
 }
 
 @media (max-width: 725px) {
-    .paragraphe:hover {
-        transform: none;
-    }
 
     .paragraphe:hover h3 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .paragraphe:hover p {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     .image:hover {
@@ -206,6 +213,10 @@ main .paragraphe a:hover {
     .image:hover {
         margin: 0%;
     }
+
+    .paragraphe:hover { 
+        transform: none;
+    }
 }
 
 /* Style pour le bouton de retour en haut */
@@ -213,7 +224,7 @@ main .paragraphe a:hover {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 50px;
     font-size: 24px;
     background-color: #333;
     color: #fff;
@@ -246,7 +257,33 @@ main .paragraphe a:hover {
         width: 100vw;
     }
 
+    .contenu {
+        margin-top: 50px;
+    }
+
     .contenu img {
-        transform: scale(0.8);
+        transform: scale(0.5);
+    }
+
+    .paragraphe h3{
+        font-size: 20px;
+    }
+    .paragraphe p{
+        font-size: 15px;
+    }
+
+    .hautDePage .menu-burger {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        z-index: 2;
+    }
+    .paragraphe:hover h3{
+        font-size: 20px;
+    }
+    .paragraphe:hover p{
+        font-size: 15px;
     }
 }

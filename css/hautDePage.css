@@ -33,6 +33,10 @@ body {
 
 .nom {
     flex: 2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hautDePage .portrait img {
@@ -103,6 +107,18 @@ a {
     background-image: linear-gradient(to right, #000, #3b2626);
 }
 
+@media only screen and (max-width: 1010px) {
+    .hautDePage .nom {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .hautDePage .nom {
+        font-size: 20px;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .hautDePage {
         flex-direction: column;
@@ -117,10 +133,6 @@ a {
         height: 2px;
         background-color: #251f1f;
         margin: 0px;
-    }
-
-    .hautDePage.menu-open {
-        height: auto;
     }
 
     .hautDePage .portrait img {
@@ -143,10 +155,19 @@ a {
     .hautDePage.menu-active + .contenu {
         margin-top: 200px;
     }
+
+    .hautDePage.menu-active ul li {
+        padding: 8px;
+        background-color: #000;
+    }
     
     .nom {
-        width: 40%;
-        margin-bottom: 10px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        height: 10vh;
     }
 
     .menu {
@@ -171,6 +192,7 @@ a {
     ul li {
         text-align: center;
         margin: 15px 0;
+        
     }
 
     .menu-burger {
