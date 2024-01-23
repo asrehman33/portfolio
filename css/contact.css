@@ -79,13 +79,19 @@ button:hover {
     background-color: #251f1f;
 }
 
+@media (max-width: 1500px) {
+    main {
+        margin-top: 300px;
+    }
+}
+
 @media (max-width: 1200px) {
     .contenu {
         width: 100vw;
     }
 
     main {
-        margin-top: 100px;
+        margin-top: 300px;
         width: 70%;
     }
 }
