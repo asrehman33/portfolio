@@ -166,10 +166,10 @@ main .paragraphe a:hover {
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1372px) {
     
     .contenu img {
-        transform: scale(0.6);
+        transform: scale(0.75);
     }
     .paragraphe h3{
         font-size: 28px;
@@ -203,6 +203,12 @@ main .paragraphe a:hover {
 
     .image:hover {
         margin: 2%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contenu img {
+        transform: scale(0.6);
     }
 }
 

@@ -105,6 +105,7 @@ a {
 }
 
 .hautDePage.scrolled {
+    height: fit-content;
     background-image: linear-gradient(to right, #000, #3b2626);
 }
 
@@ -158,12 +159,9 @@ a {
     }
     
     .nom {
-        font-size: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0px;
-        height: 10vh;
+        position: absolute;
+        top: 0;
+        left: 100px;
     }
 
     .menu {
