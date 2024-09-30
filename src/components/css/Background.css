@@ -1,0 +1,122 @@
+/* Lignes animées */
+.lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Derrière le contenu */
+    overflow: hidden;
+}
+
+/* Arcs lumineux et rond */
+.line {
+    position: absolute;
+    width: 150px; /* Largeur pour créer un arc */
+    height: 150px; /* Hauteur égale à la largeur pour un cercle complet */
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.7); /* Ligne lumineuse */
+    border-radius: 50%; /* Pour créer un cercle ou arc */
+    opacity: 1;
+    animation: moveStraightLine 10s linear infinite, shadowColorChange 10s infinite alternate, borderColorChange 10s infinite alternate;
+}
+
+/* Définir l'animation pour changer la couleur de l'ombre */
+@keyframes shadowColorChange {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2); /* Blanc */
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(128, 128, 128, 0.5), 0 0 20px rgba(128, 128, 128, 0.2); /* Gris */
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2); /* Blanc */
+    }
+}
+
+/* Définir l'animation pour changer la couleur de la bordure */
+@keyframes borderColorChange {
+    0% {
+        border-color: rgba(255, 255, 255, 0.7); /* Blanc */
+    }
+    50% {
+        border-color: rgba(128, 128, 128, 0.7); /* Gris */
+    }
+    100% {
+        border-color: rgba(255, 255, 255, 0.7); /* Blanc */
+    }
+}
+
+/* Animation pour des lignes avec un mouvement en zigzag */
+@keyframes moveStraightLine {
+    0% {
+        transform: translateY(0) translateX(0); /* Position de départ */
+    }
+    25% {
+        transform: translateY(-50px) translateX(50px); /* Courbure vers le haut */
+    }
+    50% {
+        transform: translateY(0) translateX(100px); /* Retour à la position centrale */
+    }
+    75% {
+        transform: translateY(50px) translateX(150px); /* Courbure vers le bas */
+    }
+    100% {
+        transform: translateY(0) translateX(200px); /* Fin du mouvement */
+    }
+}
+
+
+/* Style pour le curseur personnalisé */
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Couleur initiale blanche avec transparence */
+    pointer-events: none;
+    /* Le curseur ne bloque pas les clics */
+    z-index: 10000;
+    mix-blend-mode: difference;
+    /* Contraste entre le curseur et l'arrière-plan */
+    transition: transform 0.1s ease-out, background-color 0.2s ease-out;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.2);
+    /* Traînée lumineuse */
+    animation: cursor-color-change 5s infinite alternate;
+    /* Animation de changement de couleur */
+    transform: translate(-50%, -50%);
+    /* Décale le curseur pour l'aligner à la pointe */
+  }
+  
+.background {
+    background-image: url('../../../public/picture/background_dark.jpg'); /* Remplacez par le chemin de votre image */
+    background-size: cover; /* Couvre toute la taille de l'écran */
+    background-attachment: fixed; /* Reste fixe lors du défilement */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Ne répète pas l'image */
+    width: 100%;
+    height: 100vh; /* Hauteur de la fenêtre */
+    position: fixed; /* Fixe l'image en arrière-plan */
+    top: 0;
+    left: 0;
+    z-index: 0; /* Place l'image derrière tout le contenu */
+}
+  
+@keyframes cursor-color-change {
+    0% {
+      background-color: rgba(255, 255, 255, 0.8);
+      /* Blanc */
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.2);
+      /* Traînée lumineuse blanche */
+    }
+  
+    100% {
+      background-color: rgba(128, 128, 128, 0.8);
+      /* Gris */
+      box-shadow: 0 0 15px rgba(128, 128, 128, 0.5), 0 0 30px rgba(128, 128, 128, 0.2);
+      /* Traînée lumineuse grise */
+    }
+  }

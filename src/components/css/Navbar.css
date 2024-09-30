@@ -1,0 +1,65 @@
+.navbar {
+    background-color: #343a40 !important;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.navbar a {
+    font-size: 1.4rem;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.brand-text {
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #f8f9fa;
+}
+
+.nav-link {
+    color: #bbb !important;
+    margin-right: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+    text-decoration: underline;
+
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, margin-left 0.3s ease;
+}
+
+.toggle-button {
+    margin-right: 10px;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.toggle-button.active {
+    color: #f8f9fa;
+}
+
+.navbar-collapse {
+    transition: max-height 0.3s ease;
+}
+
+.navbar-links.show {
+    margin-left: 15px;
+}
+
+.navbar-links.show .nav-link:hover {
+    margin-left: 50px;
+    padding-left: 5px;
+}

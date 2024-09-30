@@ -1,0 +1,143 @@
+/* Home.css */
+
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Ombre plus sombre */
+    background-color: #1a1919; /* Couleur de fond sombre */
+    color: #ffffff; /* Couleur du texte blanche */
+    animation: fadeIn 1s ease-out;
+    width: 100%;
+    overflow: hidden; /* Pour cacher les lignes qui sortent du conteneur */
+}
+
+.presentation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin-top: 20px;
+    background-color: #1a1919;
+    opacity: 0.92;
+    border-radius: 40px;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.7); /* Ligne lumineuse */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2); /* Blanc */
+    animation: shadowColorChange 5s infinite alternate, borderColorChange 5s infinite alternate;
+    z-index: 2;
+}
+
+.presentation h1{
+    font-size: 3rem;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.presentation h2{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #d3d3d3;
+    text-align: start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.picture{
+    width: 300px;
+    border-radius: 50%;
+}
+
+/* Conteneur principal */
+.containerHome {
+    z-index: 2; /* Pour s'assurer que le contenu est au-dessus des lignes */
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; /* Assure que les éléments enfants prennent la même hauteur */
+    width: 95%;
+    max-width: 95% !important; /* Surcharge les styles Bootstrap */
+}
+
+.quiSuisJe, .mesObjectifs {
+    background-color: #121212; /* Couleur de fond sombre */
+    color: #ffffff; /* Couleur du texte blanche */
+    width: 45% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important; /* Centrer le contenu verticalement */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2); /* Blanc */
+    animation: shadowColorChange 5s infinite alternate, borderColorChange 5s infinite alternate;
+    border: 2px solid rgba(255, 255, 255, 0.7); /* Ligne lumineuse */
+    opacity: 0.92;
+}
+
+/* Style pour le titre */
+.containerHome h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: slideInFromLeft 1s ease-out;
+    color: #ffffff; /* Couleur du texte blanche */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+/* Style pour le paragraphe */
+.containerHome p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    animation: slideInFromRight 1s ease-out;
+    color: #d3d3d3; /* Couleur du texte gris clair */
+    text-align: start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Animation pour le conteneur principal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animation pour le titre */
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animation pour le paragraphe */
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

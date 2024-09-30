@@ -1,0 +1,107 @@
+/* Contact.css */
+
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.Contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Ombre plus sombre */
+    background-color: #1a1919; /* Couleur de fond sombre */
+    color: #ffffff; /* Couleur du texte blanche */
+    animation: fadeIn 1s ease-out;
+    width: 100%;
+    overflow: hidden; /* Pour cacher les lignes qui sortent du conteneur */
+    padding-bottom: 20px;
+    min-height: 91vh;
+}
+
+.containerContact {
+    background-color: #1a1919;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2); /* Blanc */
+    max-width: 600px;
+    width: 100%;
+    z-index: 2;
+    border: 2px solid rgba(255, 255, 255, 0.7); /* Ligne lumineuse */
+    animation: shadowColorChange 5s infinite alternate, borderColorChange 5s infinite alternate;
+}
+
+.containerContact h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.containerContact p {
+    text-align: center;
+    color: #d3d3d3;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.containerContact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerContact label {
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.containerContact input, .containerContact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.containerContact button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.containerContact button:hover {
+    background-color: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes shadowColorChange {
+    from { box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2); }
+    to { box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.5); }
+}
+
+@keyframes borderColorChange {
+    from { border-color: rgba(255, 255, 255, 0.7); }
+    to { border-color: rgba(255, 255, 255, 0.5); }
+}
