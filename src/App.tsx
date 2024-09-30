@@ -13,10 +13,10 @@ function App() {
     <Router>
       <MyNavbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/university-projects" element={<UniversityProjects />} />
-        <Route path="/personal-projects" element={<PersonalProjects />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/PortfolioReact" element={<Home />} />
+        <Route path="/PortfolioReact/university-projects" element={<UniversityProjects />} />
+        <Route path="/PortfolioReact/personal-projects" element={<PersonalProjects />} />
+        <Route path="/PortfolioReact/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
