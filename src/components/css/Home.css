@@ -19,6 +19,7 @@ body, html {
     animation: fadeIn 1s ease-out;
     width: 100%;
     overflow: hidden; /* Pour cacher les lignes qui sortent du conteneur */
+    min-height: 91vh;
 }
 
 .presentation{

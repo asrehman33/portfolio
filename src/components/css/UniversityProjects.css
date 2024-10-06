@@ -18,6 +18,7 @@ body, html {
     width: 100%;
     overflow: hidden; /* Pour cacher les lignes qui sortent du conteneur */
     padding-bottom: 20px;
+    min-height: 91vh;
 }
 
 .Projects{
@@ -64,7 +65,7 @@ body, html {
     align-items: center;
     color: #ffffff; /* Couleur du texte blanche */
     animation: fadeIn 1s ease-out;
-    width: 100%;
+    min-width: 100%;
     overflow: hidden; /* Pour cacher les lignes qui sortent du conteneur */
     padding-right: 20px;
     padding-left: 20px;

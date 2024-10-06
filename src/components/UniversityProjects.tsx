@@ -42,7 +42,7 @@ const UniversityProjects: React.FC = () => {
           <h1>Odomo</h1>
           <div className="container">
             <div className="picturePlus">
-              <img src={process.env.PUBLIC_URL + "/picture/Odomo.png"} alt="Odomo" className="pictureProject"/>
+              <img src={process.env.PUBLIC_URL + "/picture/odomo.png"} alt="Odomo" className="pictureProject"/>
               <a href={process.env.PUBLIC_URL + "/pdf/Odomo.pdf"} target="_blank">En savoir plus</a>
             </div>
             <p>La réalisation de ce projet m'a offert une opportunité précieuse de mettre en pratique les compétences que je vais continuer à développer tout au long de ma carrière. 
