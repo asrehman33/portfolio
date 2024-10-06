@@ -9,7 +9,7 @@ const UniversityProjects: React.FC = () => {
       <div className="Projects">
         <div className="project symfony">
           <h1>Symfony</h1>
-          <div className="container">
+          <div className="containerProjects">
             <div className="picturePlus">
               <img src={process.env.PUBLIC_URL + "/picture/serieTracker.png"} alt="seriesTracker" className="pictureProject"/>
               <a href={process.env.PUBLIC_URL + "/pdf/serieTracker.pdf"} target="_blank" rel="noopener noreferrer">En savoir plus</a>
@@ -25,7 +25,7 @@ const UniversityProjects: React.FC = () => {
         </div>
         <div className="project BasedeDonnée">
           <h1>Création d'une application</h1>
-          <div className="container">
+          <div className="containerProjects">
             <div className="picturePlus">
               <img src={process.env.PUBLIC_URL + "/picture/comput-R.png"} alt="BasedeDonnée" className="pictureProject"/>
               <a href={process.env.PUBLIC_URL + "/pdf/comput-R.pdf"} target="_blank">En savoir plus</a>
@@ -40,7 +40,7 @@ const UniversityProjects: React.FC = () => {
         </div>
         <div className="project Odomo">
           <h1>Odomo</h1>
-          <div className="container">
+          <div className="containerProjects">
             <div className="picturePlus">
               <img src={process.env.PUBLIC_URL + "/picture/odomo.png"} alt="Odomo" className="pictureProject"/>
               <a href={process.env.PUBLIC_URL + "/pdf/Odomo.pdf"} target="_blank">En savoir plus</a>
@@ -58,7 +58,7 @@ const UniversityProjects: React.FC = () => {
         </div>
         <div className="project Biosphere7">
           <h1>Biosphere7</h1>
-          <div className="container">
+          <div className="containerProjects">
             <div className="picturePlus">
               <img src={process.env.PUBLIC_URL + "/picture/Biosphere7.png"} alt="Biosphere7" className="pictureProject"/>
               <a href={process.env.PUBLIC_URL + "/pdf/Biosphere7.pdf"} target="_blank">En savoir plus</a>
@@ -78,7 +78,7 @@ const UniversityProjects: React.FC = () => {
         </div>
         <div className="project MachineVirtuelle">
           <h1>Machine Virtuelle</h1>
-          <div className="container">
+          <div className="containerProjects">
             <div className="picturePlus">
               <img src={process.env.PUBLIC_URL + "/picture/MachineVirtuelle.png"} alt="MachineVirtuelle" className="pictureProject"/>
               <a href={process.env.PUBLIC_URL + "/pdf/MachineVirtuelle.pdf"} target="_blank">En savoir plus</a>
@@ -102,7 +102,7 @@ const UniversityProjects: React.FC = () => {
         </div>
         <div className="project CreationBaseDeDonnée">
           <h1>Creation d'une base de donnée</h1>
-          <div className="container">
+          <div className="containerProjects">
             <div className="picturePlus">
               <img src={process.env.PUBLIC_URL + "/picture/baseDeDonnée.png"} alt="CreationBaseDeDonnée" className="pictureProject"/>
               <a href={process.env.PUBLIC_URL + "/pdf/BaseDeDonnées.pdf"} target="_blank">En savoir plus</a>
@@ -126,7 +126,7 @@ const UniversityProjects: React.FC = () => {
         </div>
         <div className="project SiteWeb">
           <h1>Site web</h1>
-          <div className="container">
+          <div className="containerProjects">
             <div className="picturePlus">
               <img src={process.env.PUBLIC_URL + "/picture/siteWeb2.png"} alt="SiteWeb" className="pictureProject"/>
               <a href={process.env.PUBLIC_URL + "/pdf/SiteWeb.pdf"} target="_blank">En savoir plus</a>
@@ -150,7 +150,7 @@ const UniversityProjects: React.FC = () => {
         </div>
         <div className="project DiagnosticExterne">
           <h1>SWOT</h1>
-          <div className="container">
+          <div className="containerProjects">
             <div className="picturePlus">
               <img src={process.env.PUBLIC_URL + "/picture/DiagnosticExterne.png"} alt="DiagnosticExterne" className="pictureProject"/>
               <a href={process.env.PUBLIC_URL + "/pdf/DiagnosticExterne.pdf"} target="_blank">En savoir plus</a>

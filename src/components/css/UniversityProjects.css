@@ -58,7 +58,7 @@ body, html {
 }
 
 /* Conteneur principal */
-.container {
+.containerProjects {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -71,7 +71,7 @@ body, html {
     padding-left: 20px;
 }
 
-.container p{
+.containerProjects p{
     font-size: 1.2rem;
     line-height: 1.6;
     color: #d3d3d3;
@@ -129,4 +129,39 @@ body, html {
 
 .SiteWeb img{
     width: 50%;
+}
+
+@media (max-width: 880px) {
+
+    .Projects{
+        width: 90%;
+    }
+
+    .containerProjects{
+        flex-direction: column-reverse;
+    }
+    
+    .containerProjects p{
+        margin-top: 20px;
+    }
+
+    .picturePlus{
+        width: 90%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .containerProjects p{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .Projects{
+        width: 98%;
+    }
+
+    .picturePlus{
+        width: 100%;
+    }
 }

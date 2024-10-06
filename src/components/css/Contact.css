@@ -105,3 +105,28 @@ body, html {
     from { border-color: rgba(255, 255, 255, 0.7); }
     to { border-color: rgba(255, 255, 255, 0.5); }
 }
+
+@media (max-width: 880px) {
+    .Contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .containerContact{
+        width: 95%;
+    }
+}
+
+@media (max-width: 500px) {
+    .Contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .containerContact{
+        width: 90%;
+    }
+}
