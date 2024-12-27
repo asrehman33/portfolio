@@ -1,167 +1,209 @@
-body, html {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+body,
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.UniversityProjects{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Ombre plus sombre */
-    background-color: #1a1919; /* Couleur de fond sombre */
-    color: #ffffff; /* Couleur du texte blanche */
-    animation: fadeIn 1s ease-out;
-    width: 100%;
-    overflow: hidden; /* Pour cacher les lignes qui sortent du conteneur */
-    padding-bottom: 20px;
-    min-height: 91vh;
+.UniversityProjects {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Ombre plus sombre */
+  background-color: #1a1919; /* Couleur de fond sombre */
+  color: #ffffff; /* Couleur du texte blanche */
+  animation: fadeIn 1s ease-out;
+  width: 100%;
+  overflow: hidden; /* Pour cacher les lignes qui sortent du conteneur */
+  padding-bottom: 20px;
+  min-height: 91vh;
 }
 
-.Projects{
-    z-index: 2;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 85%;
-    opacity: 0.95;
-    padding: 10px;
+.Projects {
+  z-index: 2;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  opacity: 0.95;
+  padding: 10px;
 }
 
-.project{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 20px;
-    background-color: #1a1919;
-    border-radius: 45px;
-    padding: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.7); /* Ligne lumineuse */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2); /* Blanc */
-    animation: shadowColorChange 5s infinite alternate, borderColorChange 5s infinite alternate;
+.project {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #1a1919;
+  border-radius: 45px;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.7); /* Ligne lumineuse */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2); /* Blanc */
+  animation: shadowColorChange 5s infinite alternate,
+    borderColorChange 5s infinite alternate;
 }
 
-.project h1{
-    font-size: 2.5rem;
-    color: #ffffff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    text-decoration: underline;
-    animation: slideInFromLeft 1s ease-out;
+.project h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  animation: slideInFromLeft 1s ease-out;
 }
 
 /* Conteneur principal */
 .containerProjects {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #ffffff; /* Couleur du texte blanche */
-    animation: fadeIn 1s ease-out;
-    min-width: 100%;
-    overflow: hidden; /* Pour cacher les lignes qui sortent du conteneur */
-    padding-right: 20px;
-    padding-left: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff; /* Couleur du texte blanche */
+  animation: fadeIn 1s ease-out;
+  min-width: 100%;
+  overflow: hidden; /* Pour cacher les lignes qui sortent du conteneur */
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-.containerProjects p{
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #d3d3d3;
-    text-align: start;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left: 30px;
-    margin-right: 30px;
-    width: 120%;
-    animation: slideInFromLeft 1s ease-out;
+.containerProjects p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #d3d3d3;
+  text-align: start;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 120%;
+  animation: slideInFromLeft 1s ease-out;
 }
 
 .project:nth-child(odd) .container {
-    flex-direction: row;
+  flex-direction: row;
 }
 
-.project:nth-child(even) .container{
-    flex-direction: row-reverse;
+.project:nth-child(even) .container {
+  flex-direction: row-reverse;
 }
 
-.pictureProject{
-    width: 100%;
+.pictureProject {
+  width: 100%;
 }
 
-.picturePlus{
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.picturePlus {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.picturePlus a{
-    color: #ffffff;
-    font-size: 1.2em;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    text-decoration: underline;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    animation: shadowColorChange 5s infinite alternate, borderColorChange 5s infinite alternate;
-    width: fit-content;
-    text-align: center;
-    margin-top: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.7); /* Ligne lumineuse */
-    animation: slideInFromLeft 1s ease-out;
+.picturePlus a {
+  color: #ffffff;
+  font-size: 1.2em;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: shadowColorChange 5s infinite alternate,
+    borderColorChange 5s infinite alternate;
+  width: fit-content;
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.7); /* Ligne lumineuse */
+  animation: slideInFromLeft 1s ease-out;
 }
 
-.MachineVirtuelle img, .Biosphere7 img{
-    width: 80%;
+.MachineVirtuelle img,
+.Biosphere7 img {
+  width: 80%;
 }
 
-.SiteWeb img{
-    width: 50%;
+.SiteWeb img {
+  width: 50%;
+}
+
+.picturePlus a {
+  transition: all 0.3s ease;
+}
+
+.picturePlus a:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+.picturePlus a:active {
+  color: #0056b3;
+  transform: scale(0.9);
+}
+
+.scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+  transition: opacity 0.3s ease;
+  z-index: 1000; /* Ensure it is above other elements */
+}
+
+.scrollTop:hover {
+  background-color: #0056b3;
+  z-index: 1000; /* Ensure it is above other elements */
 }
 
 @media (max-width: 880px) {
+  .Projects {
+    width: 90%;
+  }
 
-    .Projects{
-        width: 90%;
-    }
+  .containerProjects {
+    flex-direction: column-reverse;
+  }
 
-    .containerProjects{
-        flex-direction: column-reverse;
-    }
-    
-    .containerProjects p{
-        margin-top: 20px;
-    }
+  .containerProjects p {
+    margin-top: 20px;
+  }
 
-    .picturePlus{
-        width: 90%;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
+  .picturePlus {
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 
-    .containerProjects p{
-        width: 100%;
-    }
+  .containerProjects p {
+    width: 100%;
+  }
 }
 
 @media (max-width: 500px) {
-    .Projects{
-        width: 98%;
-    }
+  .Projects {
+    width: 98%;
+  }
 
-    .picturePlus{
-        width: 100%;
-    }
+  .picturePlus {
+    width: 100%;
+  }
 }

@@ -1,9 +1,31 @@
-import react from "react";
+import React, { useState, useEffect } from "react";
 import ContactLogo from './ContactLogo';
 import Background from "./BackgroundDarkd";
 import "./css/UniversityProjects.css";
 
 const UniversityProjects: React.FC = () => {
+
+  const [showScroll, setShowScroll] = useState(false);
+
+  const checkScrollTop = () => {
+    if (!showScroll && window.scrollY > 200) {
+      setShowScroll(true);
+    } else if (showScroll && window.scrollY <= 200) {
+      setShowScroll(false);
+    }
+  };
+
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", checkScrollTop);
+    return () => {
+      window.removeEventListener("scroll", checkScrollTop);
+    };
+  }, [showScroll]);
+
   return (
     <div className="UniversityProjects">
       <div className="Projects">
@@ -108,19 +130,11 @@ const UniversityProjects: React.FC = () => {
               <a href={process.env.PUBLIC_URL + "/pdf/BaseDeDonnées.pdf"} target="_blank">En savoir plus</a>
             </div>
             <p>
-              Ce projet avait pour but d'installer une machine virtuelle dédiée à une équipe de développeurs pour la 
-              création d'un jeu, ce qui impliquait l'installation du langage ainsi que d'un IDE 
-              adapté à son utilisation.
-              <br />
-              Nous devions configurer une machine avec un matériel adéquat, 
-              en créant un compte administrateur et un compte développeur avec des permissions distinctes selon leurs rôles. 
-              En parallèle, nous avons configuré Git pour permettre le clonage de dépôts et 
-              modifié le prompt Bash afin qu'il affiche l'état de Git à tout moment.
+              Ce travail de groupe dans le cadre d'un projet universitaire m'a permis de développer mes connaissances et de maîtriser adéquatement le langage SQL.
               <br /><br />
-              Ce projet a été l'occasion pour mes camarades et moi d'acquérir une bonne maîtrise de l'installation et 
-              de la configuration d'une machine en fonction de critères spécifiques, 
-              ainsi que de mieux comprendre l'utilisation du terminal et 
-              sa personnalisation pour inclure des informations pertinentes.
+              Le défi principal de ce projet était d'établir une cohésion d'équipe avec mon binôme, en veillant à se répartir les tâches de manière efficace pour optimiser le temps de travail. Au-delà de cet esprit d'équipe, l'aspect le plus crucial de cette activité a été de garantir la qualité des données, en s'assurant qu'elles soient cohérentes, complètes et précises.
+              <br /><br />
+              Ainsi, mes compétences en bases de données se sont considérablement améliorées, notamment en ce qui concerne la création et le remplissage d'une base de données, ainsi que l'élaboration d'un schéma entité-association.
             </p>
           </div>
         </div>
@@ -171,6 +185,9 @@ const UniversityProjects: React.FC = () => {
       </div>
       <ContactLogo />
       <Background />
+      <button className="scrollTop" onClick={scrollTop} style={{ display: showScroll ? 'flex' : 'none' }}>
+        &#8679;
+      </button>
     </div>
   );
 };
