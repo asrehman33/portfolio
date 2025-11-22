@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
 
     // Vérifier la réponse de sécurité
     if (parseInt(formData.securityAnswer) !== num1 + num2) {
-      alert("La réponse à la question de sécurité est incorrecte. Veuillez réessayer.");
+      alert("Incorrect security answer. Please try again.");
       return;
     }
 
@@ -52,10 +52,11 @@ const Contact: React.FC = () => {
     .then(response => response.json())
     .then(data => {
       console.log('Réponse de Formspree:', data);
-      alert('Le formulaire a été envoyé avec succès!');
+      alert('Your message has been sent successfully!');
     })
     .catch(error => {
-      console.error('Erreur lors de l\'envoi du formulaire:', error);
+      console.error('Error sending form:', error);
+      alert('There was an error sending your message. Please try again later.');
     });
 
     // Réinitialise le formulaire après l'envoi
@@ -75,22 +76,22 @@ const Contact: React.FC = () => {
     <div className="Contact">
       <div className="containerContact">
         <main>
-          <h1>Contactez-moi</h1>
-          <p>N'hésitez pas à me contacter pour toute question ou proposition. Je suis ouvert à la collaboration et aux opportunités professionnelles.</p>
+          <h1>Contact Me</h1>
+          <p>Feel free to reach out to me for any questions or proposals. I am open to collaboration and professional opportunities.</p>
           <form id="contactForm" onSubmit={handleSubmit}>
-            <label htmlFor="nom">Nom :</label>
-            <input type="text" id="nom" name="nom" required placeholder="Votre nom" value={formData.nom} onChange={handleChange} />
+            <label htmlFor="nom">Name :</label>
+            <input type="text" id="nom" name="nom" required placeholder="Your name" value={formData.nom} onChange={handleChange} />
 
             <label htmlFor="email">Email :</label>
-            <input type="email" id="email" name="email" required placeholder="Votre e-mail" value={formData.email} onChange={handleChange} />
+            <input type="email" id="email" name="email" required placeholder="Your email" value={formData.email} onChange={handleChange} />
 
             <label htmlFor="message">Message :</label>
-            <textarea id="message" name="message" required placeholder="Votre message" value={formData.message} onChange={handleChange}></textarea>
+            <textarea id="message" name="message" required placeholder="Your message" value={formData.message} onChange={handleChange}></textarea>
 
-            <label htmlFor="securityAnswer">Combien font {num1} + {num2} ?</label>
-            <input type="text" id="securityAnswer" name="securityAnswer" required placeholder="Votre réponse" value={formData.securityAnswer} onChange={handleChange} />
+            <label htmlFor="securityAnswer">What is {num1} + {num2} ?</label>
+            <input type="text" id="securityAnswer" name="securityAnswer" required placeholder="Your answer" value={formData.securityAnswer} onChange={handleChange} />
 
-            <button type="submit">Envoyer</button>
+            <button type="submit">Send</button>
           </form>
         </main>
       </div>

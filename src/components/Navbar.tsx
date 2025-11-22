@@ -25,8 +25,8 @@ const MyNavbar = () => {
       />
       <Navbar.Collapse id="basic-navbar-nav" className={`justify-content-center ${isOpen ? 'show' : ''}`}>
         <Nav className={`navbar-links ${isOpen ? 'show' : ''}`}>
-          <Nav.Link as={Link} to={getLink("/")}>Accueil</Nav.Link>
-          <Nav.Link as={Link} to={getLink("/university-projects")}>Projets universitaires</Nav.Link>
+          <Nav.Link as={Link} to={getLink("/")}>Home</Nav.Link>
+          <Nav.Link as={Link} to={getLink("/university-projects")}>University Projects</Nav.Link>
           {/* <Nav.Link as={Link} to={getLink("/personal-projects")}>Projets personnels</Nav.Link> */}
           <Nav.Link as={Link} to={getLink("/contact")}>Contact</Nav.Link>
         </Nav>

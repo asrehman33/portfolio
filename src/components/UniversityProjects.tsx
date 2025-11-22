@@ -34,29 +34,26 @@ const UniversityProjects: React.FC = () => {
           <div className="containerProjects">
             <div className="picturePlus">
               <img src={process.env.PUBLIC_URL + "/picture/serieTracker.png"} alt="seriesTracker" className="pictureProject"/>
-              <a href={process.env.PUBLIC_URL + "/pdf/serieTracker.pdf"} target="_blank" rel="noopener noreferrer">En savoir plus</a>
+              <a href={process.env.PUBLIC_URL + "/pdf/serieTracker.pdf"} target="_blank" rel="noopener noreferrer">Learn more</a>
             </div>
-            <p>Ce projet a constitué une étape cruciale de mon apprentissage, 
-              mettant en avant mes compétences en développement avec Symfony et ma capacité à intégrer des API externes comme l'OMDB API. 
-              À travers la manipulation de données JSON, j'ai perfectionné ma compréhension des entités Doctrine, en particulier dans la gestion détaillée des saisons, épisodes, acteurs, années, genres et pays de production.
-              La mise en œuvre de fonctionnalités telles que l'importation, la mise à jour des données et l'affichage détaillé des séries a renforcé mes compétences Symfony, 
-              tout en m'immergeant dans un contexte professionnel réaliste. 
-              Ce projet a été une opportunité inestimable pour une progression significative dans le développement web.
+            <p>This project was a crucial step in my learning journey, highlighting my skills in Symfony development and my ability to integrate external APIs like the OMDB API.
+              Through handling JSON data, I refined my understanding of Doctrine entities, particularly in managing detailed information about seasons, episodes, actors, years, genres, and production countries.
+              Implementing features such as data import, updates, and detailed series display strengthened my Symfony skills while immersing me in a realistic professional context.
+              This project was an invaluable opportunity for significant growth in web development.
             </p>
           </div>
         </div>
         <div className="project BasedeDonnée">
-          <h1>Création d'une application</h1>
+          <h1>Creating an application</h1>
           <div className="containerProjects">
             <div className="picturePlus">
               <img src={process.env.PUBLIC_URL + "/picture/comput-R.png"} alt="BasedeDonnée" className="pictureProject"/>
-              <a href={process.env.PUBLIC_URL + "/pdf/comput-R.pdf"} target="_blank">En savoir plus</a>
+              <a href={process.env.PUBLIC_URL + "/pdf/comput-R.pdf"} target="_blank">Learn more</a>
             </div>
-            <p>La réalisation de ce projet nous a permis de nous familiariser avec le C# et les concepts mathématiques nécessaires pour obtenir un affichage graphique réactif,
-               ainsi que pour générer des graphiques dynamiques. De plus, l'intégration avec la base de données a renforcé nos compétences en SQL. 
-               Nous avons également utilisé Python pour créer des visualisations graphiques à partir des données présentes dans la base de données. 
-               Ces données ont été remplies à partir de fichiers CSV contenant des informations comme les émissions de CO2, 
-               les déchets recyclés, etc., dans différents pays. Les graphiques générés avec Python nous ont permis d'analyser l'évolution de ces indicateurs environnementaux.
+            <p>This project allowed us to become familiar with C# and the mathematical concepts needed for responsive graphical displays and dynamic chart generation.
+               Additionally, integrating with the database enhanced our SQL skills. We also used Python to create graphical visualizations from the data in the database.
+               This data was populated from CSV files containing information such as CO2 emissions, recycled waste, etc., across different countries.
+               The charts generated with Python enabled us to analyze the evolution of these environmental indicators.
             </p>
           </div>
         </div>
@@ -65,16 +62,15 @@ const UniversityProjects: React.FC = () => {
           <div className="containerProjects">
             <div className="picturePlus">
               <img src={process.env.PUBLIC_URL + "/picture/odomo.png"} alt="Odomo" className="pictureProject"/>
-              <a href={process.env.PUBLIC_URL + "/pdf/Odomo.pdf"} target="_blank">En savoir plus</a>
+              <a href={process.env.PUBLIC_URL + "/pdf/Odomo.pdf"} target="_blank">Learn more</a>
             </div>
-            <p>La réalisation de ce projet m'a offert une opportunité précieuse de mettre en pratique les compétences que je vais continuer à développer tout au long de ma carrière. 
-              J'ai pu identifier les solutions techniques pour répondre aux besoins d'un client à l'aide d'un langage de programmation (Java).
-              Ce projet m'a également permis de travailler avec des matrices à deux dimensions, 
-              notamment pour effectuer un affichage inversé, ce qui a renforcé ma compréhension de ce concept.
+            <p>The implementation of this project provided me with a valuable opportunity to apply the skills I will continue to develop throughout my career. 
+              I was able to identify technical solutions to meet a client's needs using a programming language (Java).
+              This project also allowed me to work with two-dimensional matrices, particularly for performing inverted displays, which enhanced my understanding of this concept.
               <br /><br />
-              En parallèle, j'ai appris à établir un planning optimisé pour une collaboration efficace en équipe, 
-              tout en développant un sens des responsabilités face à l'importance de livrer un code fonctionnel et conforme aux attentes du client. 
-              Ce projet m'a donc plongé dans des conditions de travail réelles, favorisant un environnement propice à l'amélioration continue.
+              Simultaneously, I learned to establish an optimized schedule for effective team collaboration, 
+              while developing a sense of responsibility regarding the importance of delivering functional code that meets client expectations. 
+              Thus, this project immersed me in real working conditions, fostering an environment conducive to continuous improvement.
             </p>
           </div>
         </div>
@@ -83,82 +79,65 @@ const UniversityProjects: React.FC = () => {
           <div className="containerProjects">
             <div className="picturePlus">
               <img src={process.env.PUBLIC_URL + "/picture/Biosphere7.png"} alt="Biosphere7" className="pictureProject"/>
-              <a href={process.env.PUBLIC_URL + "/pdf/Biosphere7.pdf"} target="_blank">En savoir plus</a>
+              <a href={process.env.PUBLIC_URL + "/pdf/Biosphere7.pdf"} target="_blank">Learn more</a>
             </div>
-            <p>Ce projet a été une expérience d'apprentissage très enrichissante. 
-              J'ai contribué à la création de deux stratégies pour une intelligence artificielle, 
-              ce qui m'a permis de comprendre comment aborder une tâche, 
-              de l'analyse du cahier des charges à l'adoption des bonnes méthodes de travail.
-              Dans le projet Biosphère, nous avons codé un jeu en 2D, en participant à l'implémentation des règles et 
-              en nous familiarisant avec les classes et tableaux en JAVA. 
-              En deuxième phase, nous avons conceptualisé une IA capable de rivaliser avec d'autres IA dans un tournoi hebdomadaire.
+            <p>This project was a highly enriching learning experience. 
+              I contributed to the creation of two strategies for an artificial intelligence, 
+              which allowed me to understand how to approach a task,
+              from analyzing the specifications to adopting effective working methods.
+              In the Biosphere project, we coded a 2D game, participating in the implementation of the rules and 
+              familiarizing ourselves with classes and arrays in JAVA.
+              In the second phase, we conceptualized an AI capable of competing with other AIs in a weekly tournament.
               <br /><br />
-              Ce projet a affiné mon esprit logique et renforcé mes compétences en résolution de problèmes 
-              et en programmation stratégique.
+              This project sharpened my logical thinking and strengthened my problem-solving 
+              and strategic programming skills.
             </p>
           </div>
         </div>
         <div className="project MachineVirtuelle">
-          <h1>Machine Virtuelle</h1>
+          <h1>Virtual Machine</h1>
           <div className="containerProjects">
             <div className="picturePlus">
               <img src={process.env.PUBLIC_URL + "/picture/MachineVirtuelle.png"} alt="MachineVirtuelle" className="pictureProject"/>
-              <a href={process.env.PUBLIC_URL + "/pdf/MachineVirtuelle.pdf"} target="_blank">En savoir plus</a>
+              <a href={process.env.PUBLIC_URL + "/pdf/MachineVirtuelle.pdf"} target="_blank">Learn more</a>
             </div>
-            <p>
-              Ce projet avait pour but d'installer une machine virtuelle dédiée à une équipe de développeurs pour la 
-              création d'un jeu, ce qui impliquait l'installation du langage ainsi que d'un IDE 
-              adapté à son utilisation.
-              <br />
-              Nous devions configurer une machine avec un matériel adéquat, 
-              en créant un compte administrateur et un compte développeur avec des permissions distinctes selon leurs rôles. 
-              En parallèle, nous avons configuré Git pour permettre le clonage de dépôts et 
-              modifié le prompt Bash afin qu'il affiche l'état de Git à tout moment.
+            <p>This project aimed to set up a virtual machine dedicated to a team of developers for game creation,
+              which involved installing the appropriate programming language and IDE.
+              <br/>
+              We had to configure a machine with suitable hardware, creating both an administrator account and a developer account with distinct permissions based on their roles.
+              Simultaneously, we configured Git to enable repository cloning and modified the Bash prompt to display the Git status at all times.
               <br /><br />
-              Ce projet a été l'occasion pour mes camarades et moi d'acquérir une bonne maîtrise de l'installation et 
-              de la configuration d'une machine en fonction de critères spécifiques, 
-              ainsi que de mieux comprendre l'utilisation du terminal et 
-              sa personnalisation pour inclure des informations pertinentes.
+              This project provided my teammates and me with a solid understanding of installing and configuring a machine according to specific criteria,
+              as well as a deeper comprehension of terminal usage and its customization to include relevant information.
             </p>
           </div>
         </div>
         <div className="project CreationBaseDeDonnée">
-          <h1>Creation d'une base de donnée</h1>
+          <h1>Data Base Creation</h1>
           <div className="containerProjects">
             <div className="picturePlus">
               <img src={process.env.PUBLIC_URL + "/picture/baseDeDonnée.png"} alt="CreationBaseDeDonnée" className="pictureProject"/>
-              <a href={process.env.PUBLIC_URL + "/pdf/BaseDeDonnées.pdf"} target="_blank">En savoir plus</a>
+              <a href={process.env.PUBLIC_URL + "/pdf/BaseDeDonnées.pdf"} target="_blank">Learn more</a>
             </div>
-            <p>
-              Ce travail de groupe dans le cadre d'un projet universitaire m'a permis de développer mes connaissances et de maîtriser adéquatement le langage SQL.
+            <p>This group work as part of a university project allowed me to develop my knowledge and adequately master the SQL language.
               <br /><br />
-              Le défi principal de ce projet était d'établir une cohésion d'équipe avec mon binôme, en veillant à se répartir les tâches de manière efficace pour optimiser le temps de travail. Au-delà de cet esprit d'équipe, l'aspect le plus crucial de cette activité a été de garantir la qualité des données, en s'assurant qu'elles soient cohérentes, complètes et précises.
+              The main challenge of this project was to establish team cohesion with my partner, ensuring an effective distribution of tasks to optimize working time. Beyond this team spirit, the most crucial aspect of this activity was to guarantee data quality, ensuring they were consistent, complete, and accurate.
               <br /><br />
-              Ainsi, mes compétences en bases de données se sont considérablement améliorées, notamment en ce qui concerne la création et le remplissage d'une base de données, ainsi que l'élaboration d'un schéma entité-association.
+              Thus, my database skills have significantly improved, particularly regarding the creation and population of a database, as well as the development of an entity-relationship schema.
             </p>
           </div>
         </div>
         <div className="project SiteWeb">
-          <h1>Site web</h1>
+          <h1>Website Setup</h1>
           <div className="containerProjects">
             <div className="picturePlus">
               <img src={process.env.PUBLIC_URL + "/picture/siteWeb2.png"} alt="SiteWeb" className="pictureProject"/>
-              <a href={process.env.PUBLIC_URL + "/pdf/SiteWeb.pdf"} target="_blank">En savoir plus</a>
+              <a href={process.env.PUBLIC_URL + "/pdf/SiteWeb.pdf"} target="_blank">Learn more</a>
             </div>
-            <p>
-              Ce projet avait pour but d'installer une machine virtuelle dédiée à une équipe de développeurs pour la 
-              création d'un jeu, ce qui impliquait l'installation du langage ainsi que d'un IDE 
-              adapté à son utilisation.
-              <br />
-              Nous devions configurer une machine avec un matériel adéquat, 
-              en créant un compte administrateur et un compte développeur avec des permissions distinctes selon leurs rôles. 
-              En parallèle, nous avons configuré Git pour permettre le clonage de dépôts et 
-              modifié le prompt Bash afin qu'il affiche l'état de Git à tout moment.
-              <br /><br />
-              Ce projet a été l'occasion pour mes camarades et moi d'acquérir une bonne maîtrise de l'installation et 
-              de la configuration d'une machine en fonction de critères spécifiques, 
-              ainsi que de mieux comprendre l'utilisation du terminal et 
-              sa personnalisation pour inclure des informations pertinentes.
+            <p>This project allowed me to develop my creative thinking and thoroughly master HTML and CSS to create a website for a company.
+              The site had to meet specific criteria and comply with current legislation, as it was for a company producing alcoholic beverages. 
+              I learned to incorporate the necessary legal standards for a website while ensuring an ergonomic and user-friendly interface for the client.
+              This experience was a significant lesson for me, teaching me not only HTML and CSS but also web ergonomics and the regulations to follow in this field.
             </p>
           </div>
         </div>
@@ -167,18 +146,13 @@ const UniversityProjects: React.FC = () => {
           <div className="containerProjects">
             <div className="picturePlus">
               <img src={process.env.PUBLIC_URL + "/picture/DiagnosticExterne.png"} alt="DiagnosticExterne" className="pictureProject"/>
-              <a href={process.env.PUBLIC_URL + "/pdf/DiagnosticExterne.pdf"} target="_blank">En savoir plus</a>
+              <a href={process.env.PUBLIC_URL + "/pdf/DiagnosticExterne.pdf"} target="_blank">Learn more</a>
             </div>
-            <p>
-              Ce projet m'a offert une meilleure compréhension du fonctionnement d'une entreprise tout en renforçant mes 
-              connaissances générales. Avec mes camarades, nous avons réalisé une analyse fonctionnelle approfondie, 
-              identifiant les opportunités et menaces externes auxquelles l'entreprise fait face (diagnostic externe).
+            <p>This project provided me with a better understanding of how a company operates while strengthening my general knowledge.
+              Together with my classmates, we conducted a thorough functional analysis, identifying the external opportunities and threats facing the company (external diagnosis).
               <br /><br />
-              Cette expérience m'a apporté de nombreux aspects positifs, 
-              comme la mise en place d'un planning optimisé pour un travail d'équipe efficace et la maîtrise des outils de 
-              recherche, essentiels pour fournir des informations vérifiées et pertinentes. 
-              Travailler en groupe sur ces projets a également été l'occasion de développer mes compétences en collaboration 
-              et en gestion de projets, ce qui est crucial pour comprendre l'environnement global de l'entreprise.
+              This experience brought me many positive aspects, such as establishing an optimized schedule for effective teamwork and mastering research tools, essential for providing verified and relevant information.
+              Working in a group on these projects was also an opportunity to develop my collaboration and project management skills, which are crucial for understanding the overall business environment.
             </p>
           </div>
         </div>
